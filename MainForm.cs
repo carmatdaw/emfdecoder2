@@ -25,8 +25,8 @@ namespace emfdecoder2
             postDraw
         };
         private bool newEmf = true;
-        private string filePath = "c:/dev/EMF/library/samples/image3.emf";
-        private string fileDir = "c:/dev/EMF/library/samples/";
+        private string filePath = "./default.emf";
+        private string fileDir = "c:/";
         private Graphics.EnumerateMetafileProc metafileRenderDelegate;
         private Graphics.EnumerateMetafileProc metafileDecomposeDelegate;
         private int recordCount;
@@ -50,7 +50,9 @@ namespace emfdecoder2
         public MainForm()
         {
             self = this;
+
             mf = new Metafile(filePath);
+            
             metafileRenderDelegate = new Graphics.EnumerateMetafileProc(MetafileRenderCallback);
             metafileDecomposeDelegate = new Graphics.EnumerateMetafileProc(MetafileDecomposeCallback);
             processingTimer.Tick += new EventHandler(TimerEventProcessor);
@@ -58,7 +60,8 @@ namespace emfdecoder2
             InitializeComponent();
 
             checkerPattern = new Bitmap(emfdecoder2.Properties.Resources.checker);
-            DetermineDefaultZoom();
+            this.filePathLabel.Text = filePath;
+            DetermineDefaultZoom(); 
 
         }
         private void MainForm_Load(object sender, EventArgs e)

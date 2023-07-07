@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emfdecoder2", "emfdecoder2.csproj", "{712C9377-EAA1-4A02-A34B-AEE77BA6F364}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "setup", "setup\setup.vdproj", "{8BFA2802-C90B-4D9F-9BD2-AEE969F5284A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{712C9377-EAA1-4A02-A34B-AEE77BA6F364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{712C9377-EAA1-4A02-A34B-AEE77BA6F364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{712C9377-EAA1-4A02-A34B-AEE77BA6F364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFA2802-C90B-4D9F-9BD2-AEE969F5284A}.Debug|Any CPU.ActiveCfg = Debug
+		{8BFA2802-C90B-4D9F-9BD2-AEE969F5284A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
